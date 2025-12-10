@@ -1,0 +1,166 @@
+/* ================================
+   DIGITAL REGISTRATION UI THEME
+================================ */
+
+/* Page background */
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main container (glass effect) */
+.container {
+    max-width: 440px;
+    width: 100%;
+    margin: 40px 15px;
+    padding: 28px 32px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow:
+        0 0 15px rgba(0, 255, 255, 0.15),
+        0 12px 28px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+}
+
+/* Heading */
+.container h2 {
+    text-align: center;
+    margin-bottom: 22px;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #00eaff;
+    text-shadow: 0 0 8px rgba(0, 234, 255, 0.6);
+}
+
+/* Alerts */
+.alert {
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.alert-danger {
+    background: rgba(255, 0, 0, 0.15);
+    color: #ffb3b3;
+    border: 1px solid rgba(255, 0, 0, 0.4);
+}
+
+.alert-success {
+    background: rgba(0, 255, 150, 0.15);
+    color: #a8ffd8;
+    border: 1px solid rgba(0, 255, 150, 0.4);
+}
+
+/* Labels */
+form label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #bdefff;
+}
+
+/* Inputs and select */
+form input,
+form select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.35);
+    color: #e9faff;
+    border: 1px solid rgba(0, 234, 255, 0.35);
+    transition: border 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+form input::placeholder {
+    color: #9fcfdc;
+}
+
+form select {
+    color: #e9faff;
+}
+
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #00eaff;
+    background: rgba(0, 0, 0, 0.55);
+    box-shadow:
+        0 0 6px rgba(0, 234, 255, 0.6),
+        0 0 12px rgba(0, 234, 255, 0.3);
+}
+
+/* Register button */
+form button {
+    width: 100%;
+    padding: 13px;
+    background: linear-gradient(135deg, #00eaff, #0078ff);
+    color: #001018;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow:
+        0 0 10px rgba(0, 234, 255, 0.5),
+        0 6px 18px rgba(0, 0, 0, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+form button:hover {
+    transform: translateY(-2px) scale(1.01);
+    box-shadow:
+        0 0 18px rgba(0, 234, 255, 0.8),
+        0 10px 22px rgba(0, 0, 0, 0.4);
+    filter: brightness(1.05);
+}
+
+form button:active {
+    transform: translateY(0);
+    box-shadow:
+        0 0 8px rgba(0, 234, 255, 0.6),
+        0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer text */
+.mt-3 {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 14px;
+    color: #c9f6ff;
+}
+
+.mt-3 a {
+    color: #00eaff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.mt-3 a:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 6px rgba(0, 234, 255, 0.7);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .container {
+        padding: 22px;
+    }
+
+    .container h2 {
+        font-size: 22px;
+    }
+}

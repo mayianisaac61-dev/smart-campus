@@ -1,0 +1,126 @@
+/* ===== Login Page Styling ===== */
+
+body {
+    background: #f4f6f9;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 400px;
+    margin: 80px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading */
+.container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form div {
+    text-align: left;
+}
+
+label {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    color: #444;
+}
+
+/* Input group with eye icon inside */
+.input-group {
+    position: relative;
+}
+
+.input-group input[type="password"],
+.input-group input[type="email"] {
+    width: 100%;
+    padding: 12px 40px 12px 14px; /* right padding for eye */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+}
+
+/* Eye icon inside input */
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #888;
+    user-select: none;
+    transition: color 0.3s ease;
+}
+
+.toggle-password:hover {
+    color: #007bff;
+}
+
+/* Button */
+button[type="submit"] {
+    background: #007bff;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+button[type="submit"]:hover {
+    background: #0056b3;
+}
+
+button[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .container {
+        margin: 40px 20px;
+        padding: 20px;
+    }
+
+    .container h2 {
+        font-size: 20px;
+    }
+
+    .input-group input {
+        padding: 12px 35px 12px 14px;
+    }
+
+    .toggle-password {
+        font-size: 16px;
+        right: 10px;
+    }
+}

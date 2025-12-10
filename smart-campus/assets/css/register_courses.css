@@ -1,0 +1,167 @@
+/* ===========================
+   Reset & Base Styles
+=========================== */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container.digital-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* ===========================
+   Alerts
+=========================== */
+.alert {
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* ===========================
+   Form Styles
+=========================== */
+.digital-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.digital-form button.btn-primary {
+    padding: 12px 25px;
+    font-size: 1rem;
+    background: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.digital-form button.btn-primary:hover {
+    background: #3498db;
+}
+
+.btn-secondary {
+    background: #95a5a6;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #7f8c8d;
+}
+
+/* ===========================
+   School Blocks
+=========================== */
+.school-block {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.school-block h4 {
+    background-color: #34495e;
+    color: #fff;
+    margin: 0;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.school-block h4::after {
+    content: '\25BC';
+    position: absolute;
+    right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.school-block.collapsed h4::after {
+    transform: rotate(-90deg);
+}
+
+.course-option {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 1rem;
+    transition: background 0.2s ease;
+}
+
+.course-option input[type="checkbox"] {
+    margin-right: 12px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.course-option:hover {
+    background-color: #f1f8ff;
+    border-left: 4px solid #2980b9;
+}
+
+.already-registered {
+    font-size: 0.85rem;
+    color: #e74c3c;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 768px) {
+    .container.digital-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .course-option {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

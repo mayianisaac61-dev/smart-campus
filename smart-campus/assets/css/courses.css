@@ -1,0 +1,116 @@
+/* courses.css */
+
+/* Page container */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 25px 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading */
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Alerts */
+.alert {
+    padding: 12px 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.alert-danger {
+    background: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+}
+.alert-success {
+    background: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+}
+
+/* Courses table */
+.courses-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.courses-table th, 
+.courses-table td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.courses-table th {
+    background: #f4f6f9;
+    font-weight: 600;
+    color: #333;
+}
+
+.courses-table tr:hover {
+    background: #f9fbfd;
+    transition: background 0.25s ease;
+}
+
+/* Links in table */
+.courses-table a {
+    color: #4a90e2;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.courses-table a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    .courses-table, 
+    .courses-table thead, 
+    .courses-table tbody, 
+    .courses-table th, 
+    .courses-table td, 
+    .courses-table tr {
+        display: block;
+        width: 100%;
+    }
+
+    .courses-table thead tr {
+        display: none;
+    }
+
+    .courses-table tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    .courses-table td {
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 10px;
+    }
+
+    .courses-table td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #444;
+    }
+}

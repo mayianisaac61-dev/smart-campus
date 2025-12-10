@@ -1,0 +1,77 @@
+/* dashboard.css */
+
+/* General container padding */
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Dashboard greeting */
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Cards */
+.card {
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: #ffffff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+/* Card links */
+.card a {
+    display: inline-block;
+    font-size: 0.95rem;
+    color: #0d6efd; /* Bootstrap primary color */
+    text-decoration: none;
+    margin-top: 5px;
+    transition: color 0.2s;
+}
+
+.card a:hover {
+    color: #0a58ca;
+    text-decoration: underline;
+}
+
+/* Row spacing */
+.row.mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+}
+
+/* Flex main content for sticky footer */
+main {
+    flex: 1 0 auto; /* grow and fill remaining height */
+}
+
+/* Optional: adjust card padding for smaller screens */
+@media (max-width: 576px) {
+    .card {
+        padding: 1rem;
+    }
+}
